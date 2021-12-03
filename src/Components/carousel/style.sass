@@ -1,0 +1,265 @@
+@import "../../_variables"
+
+.d-flex
+    @include flexBox()
+
+.f-direc
+    @include flexDirection()
+
+.align-center
+    @include alignItems()
+
+input
+    outline: 0
+    border-width: 0 0 2px
+    border-color: $colorGrey
+    width: 25vw
+    line-height: 25px
+
+.animation
+    transition: transform 0.5s ease-in-out
+
+.title-invision
+    font: $titleInvision
+
+.small-letters
+    font: $smallLetters
+    color: $colorGrey
+    margin-top: 2vh
+    margin-bottom: 1vh
+
+.forgot-pw
+    cursor: pointer
+
+.sub-title
+    font: $subTitle
+    color: $colorGrey
+
+.div-forgot
+    text-align: end
+
+.div-sginIn
+    margin-top: 30px
+    text-align: center
+
+.btn-signIn
+    cursor: pointer
+    border-radius: 100px
+    width: 175px
+    height: 45px
+    color: $colorWhite
+    background-color: $colorGrey
+    border: none
+    font: $btnSignIn
+
+.div-lines
+    margin-top: 40px
+
+.line
+    width: 9vw
+
+.div-or
+    margin: 1vh 1vw
+
+.div-btn-g
+    box-shadow: 0px 3px 6px #00000029
+    width: 263px
+    height: 45px
+    justify-content: center
+    border-radius: 100px
+    cursor: pointer
+    margin-top: 40px
+
+.btn-g
+    width: 29px
+    height: 30px
+
+.div-m
+    margin-left: 20px
+
+.phrase-g
+    font: $phraseG
+
+.div-new-invision
+    margin-top: 40px
+
+.xsmall-letters
+    font: $xSmallLetters
+    margin-left: 5px
+
+.xsmall-letters-bold
+    font: $xSmallLettersBold
+    margin-left: 5px
+
+.create-acc
+    margin-left: 5px
+    color: $colorGreenNature
+    text-decoration: underline
+    font: $fontCreateAcc
+    cursor: pointer
+
+.container
+    width: $divWidth
+    scroll-snap-type: x mandatory
+    -webkit-overflow-scrolling: auto
+
+.first-half
+    @include flexBox()
+    position: relative
+    background-color: $colorGreenNature
+    height: auto
+    min-height: 100vh
+    overflow-x: hidden
+
+.img-carousel
+    width: 100%
+    height: 100%
+    object-fit: scale-down
+
+.title-img
+    color: $colorWhite
+    margin-bottom: 2vh
+    font: $titleImg
+
+.sub-title-img
+    color: $colorWhite
+    font: $fontSubTitleImg
+
+.container-carousel
+    @include flexBox()
+    width: 100%
+    justify-content: center
+    margin-bottom: 3vh
+
+.div-texts
+    width: 45%
+    text-align: center
+    margin-bottom: 3vh
+
+.items
+    flex: none
+    width: 100%
+    height: 350px
+    scroll-snap-align: start
+    justify-content: center
+
+.div-selector
+    @include flexBox()
+    position: absolute
+    bottom: 30px
+    width: 100%
+    justify-content: center
+
+.div-title-invision
+    text-align: end
+    margin-right: 6vw
+    margin-top: 10vh
+
+.error
+    border-color: $colorRed
+
+.error-letters
+    font: $smallLetters
+    color: $colorRed
+
+.carousel
+    width: 100%
+
+.selected
+    background-color: $colorWhite
+    width: 26px
+    height: 11px
+    border-radius: 50px
+    cursor: pointer
+    margin-left: 0.5vw
+
+.not-selected
+    background: $colorWhite 0% 0% no-repeat padding-box
+    opacity: 0.5
+    width: 11px
+    height: 11px
+    margin-left: 0.5vw
+    border-radius: 100%
+    cursor: pointer
+
+@media screen and (max-width: $desktopLarge)
+    .title-img
+        font: normal normal normal 25px/38px Mulish
+
+    .sub-title-img
+        font: normal normal normal 15px/25px Mulish
+
+@media screen and (max-width: $desktopMedium)
+    .title-img
+        font: normal normal normal 24px/38px Mulish
+
+    .sub-title-img
+        font: normal normal normal 14px/25px Mulish
+
+@media screen and (max-width: $desktopSmall)
+    .title-img
+        font: normal normal normal 21px/38px Mulish
+
+    .sub-title-img
+        font: normal normal normal 13px/25px Mulish
+
+@media screen and (max-width: $laptop)
+    .title-img
+        font: normal normal normal 18px/38px Mulish
+
+    .sub-title-img
+        font: normal normal normal 10px/25px Mulish
+    .img-carousel
+        height: 75%
+
+@media screen and (max-width: $tablet)
+    .container
+        width: 100%
+    .img-carousel
+        height: 50%
+    .first-half
+        min-height: 50vh
+
+@media all and (max-width: $mobile)
+    .title-img
+        font: normal normal normal 16px/38px Mulish
+        margin-bottom: 0
+    .sub-title-img
+        font: normal normal normal 9px/25px Mulish
+    .container
+        width: 100%
+    .img-carousel
+        height: 40%
+        margin-top: 5vh
+    .first-half
+        min-height: 50vh
+    .not-selected
+        width: 7px
+        height: 7px
+    .selected
+        width: 15px
+        height: 7px
+    .container-carousel
+        margin-bottom: 0
+
+@media all and (max-width: 400px)
+    .title-img
+        font: normal normal normal 12px/27px Mulish
+        margin-bottom: 0
+    .sub-title-img
+        font: normal normal normal 6px/25px Mulish
+    .container
+        width: 100%
+    .img-carousel
+        height: 40%
+        margin-top: 5vh
+    .first-half
+        min-height: 50vh
+    .not-selected
+        width: 7px
+        height: 7px
+    .selected
+        width: 15px
+        height: 7px
+    .container-carousel
+        margin-bottom: 0
